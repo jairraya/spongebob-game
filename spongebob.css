@@ -1,0 +1,55 @@
+.container{
+
+}
+
+.game{
+    counter-reset: pontos;
+}
+
+.game:after{
+    content: counter(blah);
+}
+
+.inmigo{
+    z-index: -1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moving{
+    0% {z-index: -1}
+    1% {z-index: 2}
+    100% {z-index: 3}
+}
+
+.oops{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: 10;
+}
+
+.oops:hover{
+    display: block;
+}
+
+.coin{
+    height: ;
+    width: ;
+}
+
+.coin:checked{
+    counter-increment: pontos;
+    visibility: hidden;
+}
+
+.venceu{
+    display: none;
+    position: absolute;
+    height: ;
+    width: ;
+    
+}
